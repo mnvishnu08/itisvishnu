@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vishnu Murali - Thoughts and More</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Vishnu Murali - Thoughts and More</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025, Vishnu Murali Nambiar.</copyright>
+    <lastBuildDate>Fri, 04 Apr 2025 00:09:53 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about_me/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/about_me/</guid>
+      <description>&lt;p&gt;This is aboutme.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogerrrr</title>
+      <link>http://localhost:1313/blogerrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogerrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogerrrr</title>
+      <link>http://localhost:1313/blogerrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogerrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogerrrr</title>
+      <link>http://localhost:1313/blogerrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogerrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact Me</title>
+      <link>http://localhost:1313/contact_me/a/</link>
+      <pubDate>Thu, 03 Apr 2025 19:23:39 +0530</pubDate>
+      <guid>http://localhost:1313/contact_me/a/</guid>
+      <description>&lt;p&gt;THiafiosjdodsjd&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
