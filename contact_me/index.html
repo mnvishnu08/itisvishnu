@@ -259,8 +259,9 @@ a:visited {
 .nav {
   display: flex;
   align-items: center;
-  padding: var(--spacing-md) 0;
-  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: var(--spacing-md) clamp(1rem, 5vw, 100px);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -291,6 +292,25 @@ a:visited {
   border-bottom-color: transparent;
 }
 
+ 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;   
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;   
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+  }
+
+  .nav-logo {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+}
  
 .button {
   display: inline-block;
@@ -391,8 +411,8 @@ ul.blog-posts {
   list-style-type: none;
   padding: 0;
   margin: var(--spacing-lg) 0;
-  padding-left: 100px !important;
-  margin-left: 100px !important;
+  padding-left: clamp(1rem, 5vw, 100px);
+  margin-left: clamp(1rem, 5vw, 100px);
 }
 
 ul.blog-posts li {
@@ -426,6 +446,8 @@ ul.blog-posts li a:visited {
  
 .title {
   margin-bottom: var(--spacing-lg);
+  padding-left: clamp(1rem, 5vw, 100px);
+  padding-right: clamp(1rem, 5vw, 100px);
 }
 
 .title h1 {
@@ -442,6 +464,22 @@ ul.blog-posts li a:visited {
   display: block;
   margin-bottom: var(--spacing-md);
 }
+
+ 
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: var(--spacing-md);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;  
+  }
+
+  .title h1 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+
 
  
 .post-content {
@@ -544,7 +582,14 @@ footer {
 
 <body>
   <header>
-<div style="border-bottom: 1px solid var(--border-color); width: 1000px; padding-left: 100px; margin-left: 100px;">
+<div style="
+border-bottom: 1px solid var(--border-color);
+  padding-left: clamp(1rem, 5vw, 100px);
+  padding-right: clamp(1rem, 5vw, 100px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+">
   
    
 <a href="/" class="title">
@@ -604,8 +649,10 @@ footer {
   
   </main>
  
-  <footer>Made by Vishnu Murali with Hugo and <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear </a>
-</footer>
+  <footer>
+
+
+Made by Vishnu Murali with Hugo and <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear </a></footer>
 
   
  
