@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scribbles &amp; Builds — Notes from the PM Terminal</title>
-    <link>http://localhost:1313/itisvishnu/</link>
-    <description>Recent content on Scribbles &amp; Builds — Notes from the PM Terminal</description>
+    <title>Thoughts on Scribbles &amp; Builds — Notes from the PM Terminal</title>
+    <link>http://localhost:1313/itisvishnu/thoughts/</link>
+    <description>Recent content in Thoughts on Scribbles &amp; Builds — Notes from the PM Terminal</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Vishnu Murali Nambiar.</copyright>
     <lastBuildDate>Fri, 04 Apr 2025 00:09:53 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/itisvishnu/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/itisvishnu/about_me/</link>
-      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
-      <guid>http://localhost:1313/itisvishnu/about_me/</guid>
-      <description>&lt;div style=&#34;&#xD;&#xA;  &#xD;&#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xD;&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xD;&#xA;  max-width: 1200px;&#xD;&#xA;  margin-left: auto;&#xD;&#xA;  margin-right: auto;&#xD;&#xA;&#34;&gt;&#xD;&#xA;    &lt;p&gt;This is aboutme.md&lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/itisvishnu/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>b.md</title>
       <link>http://localhost:1313/itisvishnu/thoughts/b-copy-2/</link>
@@ -64,20 +57,6 @@
       <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
       <guid>http://localhost:1313/itisvishnu/thoughts/b-copy-6/</guid>
       <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>project 1</title>
-      <link>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</link>
-      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
-      <guid>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</guid>
-      <description>&lt;!-- A partial to be overwritten by the user.&#xD;&#xA;  Simply place a custom_body.html into&#xD;&#xA;  your local /layouts/partials-directory --&gt;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;  &lt;div style=&#34;&#xD;&#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xD;&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xD;&#xA;  max-width: 1200px;&#xD;&#xA;  margin-left: auto;&#xD;&#xA;  margin-right: auto;&#xD;&#xA;&#34;&gt;&#xD;&#xA;    This is the custom b.md&#xD;&#xA;  &lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Reach out</title>
-      <link>http://localhost:1313/itisvishnu/contact_me/</link>
-      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
-      <guid>http://localhost:1313/itisvishnu/contact_me/</guid>
-      <description>&lt;div style=&#34;&#xA;  &#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xA;  max-width: 1200px;&#xA;  margin-left: auto;&#xA;  margin-right: auto;&#xA;&#34;&gt;&#xA;    &lt;p&gt;This is reachout.md&lt;/p&gt;&#xA;  &lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

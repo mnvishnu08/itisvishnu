@@ -1,0 +1,119 @@
+/* Position for theme toggle button */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    right: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    transition: all var(--transition-fast);
+    min-width: 40px;
+    min-height: 40px;
+    justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+    background-color: var(--surface-color-alt);
+}
+
+.dark-mode-toggle:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Add smooth transition for theme changes */
+.theme-transition {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-transition,
+.theme-transition *,
+.theme-transition *:before,
+.theme-transition *:after {
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Move dark mode specific styles from @media query to data-theme attribute */
+[data-theme="light"] {
+    --background-color: #FFFBEB; /* Light theme background */
+    --surface-color: #FFF;
+    --surface-color-alt: #F8EDD9;
+    --heading-color: #317039;
+    --text-color: #333333;
+    --text-color-light: #666666;
+    --accent-color: #317039;
+    --accent-color-light: #3c8545;
+    --accent-color-dark: #265c2d;
+    --border-color: #E0E0E0;
+}
+
+[data-theme="dark"] {
+    --background-color: #1e2a20; /* Dark green-tinted background */
+    --surface-color: #2a3a2d;
+    --surface-color-alt: #3a4a3d;
+    --heading-color: #F1BE49; /* Maximum Yellow */
+    --text-color: #F8EDD9; /* Antique White */
+    --text-color-light: #FFF1D4; /* Papaya Whip */
+    --accent-color: #3c8545; /* Lighter Emerald */
+    --accent-color-light: #4ca359;
+    --accent-color-dark: #F1BE49; /* Emerald Green */
+    --border-color: #4c5c4f;
+    
+    /* Adjust shadows for dark mode */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .nav-logo {
+    color: #F1BE49;
+}
+
+[data-theme="dark"] .nav-link {
+    color: #F1BE49;
+}
+
+[data-theme="dark"] .nav-link:hover {
+    color: #F8EDD9;
+}
+
+/* Apply background and text color based on the theme */
+html[data-theme="light"] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+html[data-theme="dark"] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Ensure other elements inherit the correct theme colors */
+body {
+    background-color: inherit;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        position: static;
+        margin-top: var(--spacing-sm);
+        align-self: center;
+        transform: none;
+    }
+}
