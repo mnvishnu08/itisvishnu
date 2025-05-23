@@ -10,11 +10,11 @@
     <lastBuildDate>Fri, 04 Apr 2025 00:09:53 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/itisvishnu/vishnus_lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>project 1</title>
+      <title>Creating this website</title>
       <link>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</link>
       <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
       <guid>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</guid>
-      <description>&lt;!-- A partial to be overwritten by the user.&#xD;&#xA;  Simply place a custom_body.html into&#xD;&#xA;  your local /layouts/partials-directory --&gt;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;  &lt;div style=&#34;&#xD;&#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xD;&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xD;&#xA;  max-width: 1200px;&#xD;&#xA;  margin-left: auto;&#xD;&#xA;  margin-right: auto;&#xD;&#xA;&#34;&gt;&#xD;&#xA;    This is the custom b.md&#xD;&#xA;  &lt;/div&gt;</description>
+      <description>&lt;!-- A partial to be overwritten by the user.&#xD;&#xA;  Simply place a custom_body.html into&#xD;&#xA;  your local /layouts/partials-directory --&gt;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;  &lt;div style=&#34;&#xD;&#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xD;&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xD;&#xA;  max-width: 1200px;&#xD;&#xA;  margin-left: auto;&#xD;&#xA;  margin-right: auto;&#xD;&#xA;&#34;&gt;&#xD;&#xA;   &lt;p&gt; I made this website using Hugo, &lt;/p&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;  &lt;img src=&#34;http://localhost:1313/itisvishnu/images/profile_pic.jpeg&#34; alt=&#34;Vishnu Murali Nambiar&#34; style=&#34;float: right; margin: 0 0 1rem 1rem; max-width: 200px; border-radius: 50%;&#34;&gt;</description>
     </item>
   </channel>
 </rss>

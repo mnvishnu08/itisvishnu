@@ -97,12 +97,7 @@ I never thought I would start writing one day. Personally, I have never felt con
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope/Manrope-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
+
 
  
 :root {
@@ -115,7 +110,7 @@ I never thought I would start writing one day. Personally, I have never felt con
   --spacing-xl: 4rem;
   
    
-  --font-main: 'Manrope', sans-serif;
+  --font-main: 'Urbanist', sans-serif;
   --font-secondary: 'Urbanist', sans-serif;
   --font-mono: monospace;
   
@@ -210,7 +205,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   font-weight: 400;
   line-height: 1.75;
   color: inherit;
@@ -740,8 +735,7 @@ footer {
 </head>
 
 <body>
-  <header>
-<div style="
+  <header><div style="
 border-bottom: 1px solid var(--border-color);
   padding-left: clamp(1rem, 5vw, 100px);
   padding-right: clamp(1rem, 5vw, 100px);
@@ -749,14 +743,11 @@ border-bottom: 1px solid var(--border-color);
   margin-left: auto;
   margin-right: auto;
 ">
-  
-   
 <a href="/itisvishnu/" class="title">
   <h2>Scribbles &amp; Builds — Notes from the PM Terminal</h2>
 </a>
 <nav><div class="nav-links">
     <a href="/itisvishnu/" class="nav-link">Home Base</a>
-
 
     
     <a href="/itisvishnu/about_me/" class="nav-link">Whoami</a>
@@ -778,7 +769,6 @@ border-bottom: 1px solid var(--border-color);
     </button>
 </div></nav>
 <link rel="stylesheet" href="/itisvishnu/css/custom.css">
-
 </div>
 
 </header>
