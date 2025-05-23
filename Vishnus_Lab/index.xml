@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vishnus_Labs on Scribbles &amp; Builds — Notes from the PM Terminal</title>
+    <link>http://localhost:1313/itisvishnu/vishnus_lab/</link>
+    <description>Recent content in Vishnus_Labs on Scribbles &amp; Builds — Notes from the PM Terminal</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025, Vishnu Murali Nambiar.</copyright>
+    <lastBuildDate>Fri, 04 Apr 2025 00:09:53 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/itisvishnu/vishnus_lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>project 1</title>
+      <link>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</guid>
+      <description>&lt;!-- A partial to be overwritten by the user.&#xD;&#xA;  Simply place a custom_body.html into&#xD;&#xA;  your local /layouts/partials-directory --&gt;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;  &lt;div style=&#34;&#xD;&#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xD;&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xD;&#xA;  max-width: 1200px;&#xD;&#xA;  margin-left: auto;&#xD;&#xA;  margin-right: auto;&#xD;&#xA;&#34;&gt;&#xD;&#xA;    This is the custom b.md&#xD;&#xA;  &lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
