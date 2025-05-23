@@ -1,6 +1,18 @@
 {{ define "main" }}
 {{ if eq .Type "blog" }}{{ if not .Params.menu }}
-<h1>{{ .Title }}</h1>
+
+
+
+<div style="
+  padding-left: clamp(1rem, 5vw, 100px);
+  padding-right: clamp(1rem, 5vw, 100px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+">
+
+
+<h3>{{ .Title }}</h3>
 <p>
   <i>
     <time datetime='{{ .Date.Format "2006-01-02" }}'>
@@ -17,4 +29,5 @@
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
+</div>
 {{ end }}

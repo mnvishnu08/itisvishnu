@@ -1,22 +1,22 @@
-
 <div class="nav-links">
-    <a href="{{ "" | relURL }}" class="nav-link">Home</a>
-<!-- 
-    {{ range .Site.Menus.main }}
-    <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-    {{ end }}-->
+    <a href="/itisvishnu/" class="nav-link">Home Base</a>
 
     {{ with .Site.GetPage "/About_Me" }}
-    <a href="{{ .RelPermalink }}" class="nav-link">About Me</a>
+    <a href="/itisvishnu/about_me/" class="nav-link">Whoami</a>
     {{ end }}
 
-    {{ with .Site.GetPage "/Blog" }}
-    <a href="{{ .RelPermalink }}" class="nav-link">Blog</a>
+    {{ with .Site.GetPage "/Thoughts" }}
+    <a href="/itisvishnu/thoughts/" class="nav-link">Thoughts</a>
+    {{ end }}
+
+    {{ with .Site.GetPage "/Vishnus_Lab" }}
+    <a href="/itisvishnu/vishnus_lab/" class="nav-link">Lab</a>
     {{ end }}
 
     {{ with .Site.GetPage "/Contact_Me" }}
-    <a href="{{ .RelPermalink }}" class="nav-link">Contact Me</a>
- {{ end }}
-
- 
-  </div>
+    <a href="/itisvishnu/contact_me/" class="nav-link">Reach out</a>
+    {{ end }}
+    <button id="theme-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span id="theme-toggle-icon">🌙</span>
+    </button>
+</div>

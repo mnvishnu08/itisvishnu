@@ -1,12 +1,15 @@
-
-<div style="border-bottom: 1px solid var(--border-color); width: 1000px; padding-left: 100px; margin-left: 100px;">
-  <!-- Wrap your content here -->
-   
-<a href="{{ "" | relURL }}" class="title">
+<div style="
+border-bottom: 1px solid var(--border-color);
+  padding-left: clamp(1rem, 5vw, 100px);
+  padding-right: clamp(1rem, 5vw, 100px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+">
+<a href="{{ "/itisvishnu/" | relURL }}" class="title">
   <h2>{{ .Site.Title }}</h2>
 </a>
 <nav>{{- partial "nav.html" . -}}</nav>
-
-
+<link rel="stylesheet" href="{{ "/itisvishnu/css/custom.css" | relURL }}">
 </div>
 

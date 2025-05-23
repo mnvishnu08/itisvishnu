@@ -1,12 +1,12 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseURL = "https://example.com"
+baseURL = "https://mnvishnu08.github.io/itisvishnu/"
 
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "Vishnu Murali - Thoughts and More"
+title = "Scribbles & Builds — Notes from the PM Terminal"
 description = ""
 author = "Vishnu Murali Nambiar"
 copyright = "Copyright © 2025, Vishnu Murali Nambiar."
