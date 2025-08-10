@@ -22,6 +22,12 @@ ignoreErrors = ["error-disable-taxonomy"]
   blog = "/:slug/"
   tags = "/blog/:slug"
 
+# Menu configuration
+[[menu.main]]
+  name = "thoughts"
+  url = "/thoughts/"
+  weight = 10
+
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
   description = "Hi, Im Vishnu. Im setting up this place to just simply connect with the world."
@@ -40,6 +46,9 @@ ignoreErrors = ["error-disable-taxonomy"]
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
   title = "Hugo ʕ•ᴥ•ʔ Bear"
+
+  # Hide dates from post display
+  hideDates = true
 
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
