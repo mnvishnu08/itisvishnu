@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/itisvishnu/about_me/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/vishnus_lab/project-1/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/contact_me/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/thoughts/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/vishnus_lab/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/thoughts/b/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/itisvishnu/thoughts/as/</loc>
+    <lastmod>2025-04-04T00:09:53+05:30</lastmod>
+  </url>
+</urlset>

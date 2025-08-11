@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>Abs | Vishnu Murali - Thoughts and More</title>
+<meta name="title" content="Abs" />
+<meta name="description" content="Hi, Im Vishnu. Im setting up this place to just simply connect with the world." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/ab/">
+  <meta property="og:site_name" content="Vishnu Murali - Thoughts and More">
+  <meta property="og:title" content="Abs">
+  <meta property="og:description" content="Hi, Im Vishnu. Im setting up this place to just simply connect with the world.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="Abs">
+  <meta name="twitter:description" content="Hi, Im Vishnu. Im setting up this place to just simply connect with the world.">
+
+
+
+
+  <meta itemprop="name" content="Abs">
+  <meta itemprop="description" content="Hi, Im Vishnu. Im setting up this place to just simply connect with the world.">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/ab/index.xml" title="Vishnu Murali - Thoughts and More" />
+  
+
+
+
+
+
+<style>
+
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/Urbanist-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/Urbanist-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/Urbanist-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/Urbanist-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('/fonts/urbanist/Urbanist-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+ 
+:root {
+   
+  --container-width: 900px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  
+   
+  --font-main: 'Urbanist', sans-serif;
+  --font-secondary: 'Urbanist', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  
+   
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 1.875rem;
+  --font-size-2xl: 2.25rem;
+  --font-size-3xl: 3rem;
+  
+   
+  --background-color: #f8fafc;
+  --surface-color: #ffffff;
+  --surface-color-alt: #eef2f7;
+  --heading-color: #0f172a;
+  --text-color: #334155;
+  --text-color-light: #64748b;
+  --accent-color: #2563eb;
+  --accent-color-light: #3b82f6;
+  --accent-color-dark: #1d4ed8;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --border-color: #000000;
+  
+   
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  
+   
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+     
+    --background-color: #0f172a;
+    --surface-color: #1e293b;
+    --surface-color-alt: #334155;
+    --heading-color: #f1f5f9;
+    --text-color: #cbd5e1;
+    --text-color-light: #94a3b8;
+    --accent-color: #3b82f6;
+    --accent-color-light: #60a5fa;
+    --accent-color-dark: #2563eb;
+    --border-color: #ffffff;
+    
+     
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+ 
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin:  auto;
+  padding: var(--spacing-md);
+}
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+h5 {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
+
+h6 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+ 
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border-bottom: 1px solid transparent;
+}
+
+a:hover, a:focus {
+  color: var(--accent-color-dark);
+  border-bottom-color: var(--accent-color-light);
+}
+
+a:visited {
+  color: var(--accent-color-dark);
+}
+
+ 
+.nav {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.nav-logo {
+  font-weight: 800;
+  font-size: var(--font-size-lg);
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.nav-link {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.nav-link:hover {
+  background-color: var(--surface-color-alt);
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
+
+ 
+.button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.button:hover, .button:focus {
+  background-color: var(--accent-color-dark);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+  color: white;
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
+
+.button-outline {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.button-outline:hover, .button-outline:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+ 
+code {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  background-color: var(--surface-color-alt);
+  color: var(--heading-color);
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-sm);
+}
+
+pre {
+  font-family: var(--font-mono);
+  background-color: var(--surface-color-alt);
+  color: var(--heading-color);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  border-left: 4px solid var(--accent-color);
+  margin: var(--spacing-md) 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+ 
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  color: var(--text-color-light);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  background-color: var(--surface-color-alt);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+ 
+.card {
+  background-color: var(--surface-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+ 
+ul.blog-posts {
+  list-style-type: none;
+  padding: 0;
+  margin: var(--spacing-lg) 0;
+}
+
+ul.blog-posts li {
+  display: flex;
+  align-items: baseline;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-fast);
+}
+
+ul.blog-posts li:hover {
+  background-color: var(--surface-color-alt);
+}
+
+ul.blog-posts li span {
+  flex: 0 0 150px;
+  font-weight: 500;
+  color: var(--text-color-light);
+  font-size: var(--font-size-sm);
+}
+
+ul.blog-posts li a {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
+
+ul.blog-posts li a:visited {
+  color: var(--accent-color-dark);
+}
+
+ 
+.title {
+  margin-bottom: var(--spacing-lg);
+}
+
+.title h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.1;
+}
+
+.title time {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-sm);
+  color: var(--text-color-light);
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+ 
+.post-content {
+  margin: var(--spacing-lg) 0;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  margin: var(--spacing-md) 0;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: var(--spacing-lg) 0;
+}
+
+ 
+footer {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--text-color-light);
+  border-top: 1px solid var(--border-color);
+}
+
+ 
+.highlight {
+  background-color: var(--surface-color-alt);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-md) 0;
+  border-left: 4px solid var(--accent-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.my-0 { margin-top: 0; margin-bottom: 0; }
+
+ 
+@media (max-width: 768px) {
+  :root {
+    --container-width: 100%;
+  }
+  
+  h1 { font-size: var(--font-size-2xl); }
+  h2 { font-size: var(--font-size-xl); }
+  h3 { font-size: var(--font-size-lg); }
+  
+  ul.blog-posts li {
+    flex-direction: column;
+  }
+  
+  ul.blog-posts li span {
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-logo {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+ 
+.dark-mode-toggle {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  transition: all var(--transition-fast);
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--surface-color-alt);
+}
+
+</style>
+
+</head>
+
+<body>
+  <header>
+<div style="padding-left: 100px !important; margin-left: 100px !important;">
+  
+   
+<a href="/" class="title">
+  <h2>Vishnu Murali - Thoughts and More</h2>
+</a>
+<nav>
+<div class="nav-links">
+    <a href="/" class="nav-link">Home</a>
+
+    
+
+    
+    <a href="/about_me/" class="nav-link">About Me</a>
+    
+
+    
+    <a href="/blog/" class="nav-link">Blog</a>
+    
+
+    
+    <a href="/contact_me/" class="nav-link">Contact Me</a>
+ 
+
+ 
+  </div></nav>
+
+</div>
+
+</header>
+  <main>
+<content>
+  
+  <ul class="blog-posts">
+    
+    <li>
+      No posts yet
+    </li>
+    
+  </ul>
+  
+    <small>
+      <div>
+        
+      </div>
+    </small>
+    
+</content>
+
+
+  
+  </main>
+ 
+  <footer>Made by Vishnu Murali with Hugo and <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear </a>
+</footer>
+
+  
+ 
+</body>
+
+</html>

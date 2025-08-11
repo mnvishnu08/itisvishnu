@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Scribbles &amp; Builds — Notes from the PM Terminal</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Scribbles &amp; Builds — Notes from the PM Terminal</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025, Vishnu Murali Nambiar.</copyright>
+    <lastBuildDate>Fri, 04 Apr 2025 00:09:53 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>b.md</title>
+      <link>http://localhost:1313/b.md/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/b.md/</guid>
+      <description>&lt;!-- A partial to be overwritten by the user.&#xA;  Simply place a custom_body.html into&#xA;  your local /layouts/partials-directory --&gt;&#xA; &#xA;&#xA;  &lt;div style=&#34;&#xA;  padding-left: clamp(1rem, 5vw, 100px);&#xA;  padding-right: clamp(1rem, 5vw, 100px);&#xA;  max-width: 1200px;&#xA;  margin-left: auto;&#xA;  margin-right: auto;&#xA;&#34;&gt;&#xA;    This is the custom b.md&#xA;  &lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Blodgerrrr</title>
+      <link>http://localhost:1313/blodgerrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blodgerrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogerrrr</title>
+      <link>http://localhost:1313/blogerrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogerrrr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogesrrrr</title>
+      <link>http://localhost:1313/blogesrrrr/</link>
+      <pubDate>Fri, 04 Apr 2025 00:09:53 +0530</pubDate>
+      <guid>http://localhost:1313/blogesrrrr/</guid>
+      <description>&lt;p&gt;This is b.md&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
