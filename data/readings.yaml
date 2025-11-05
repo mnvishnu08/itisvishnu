@@ -1,0 +1,99 @@
+tech:
+  - title: "The Architecture of Open Source Applications"
+    description: "Deep dive into how successful open source projects are structured"
+    url: "https://aosabook.org/en/index.html"
+    source: "AOSA"
+    favicon: "https://aosabook.org/favicon.ico"
+  
+  - title: "Designing Data-Intensive Applications"
+    description: "Martin Kleppmann's insights on building reliable, scalable systems"
+    url: "https://dataintensive.net/"
+    source: "O'Reilly"
+    favicon: "https://www.oreilly.com/favicon.ico"
+  
+  - title: "High Performance Browser Networking"
+    description: "Essential knowledge for optimizing web performance"
+    url: "https://hpbn.co/"
+    source: "O'Reilly"
+    favicon: "https://www.oreilly.com/favicon.ico"
+  
+  - title: "System Design Primer"
+    description: "Learn how to design large-scale systems"
+    url: "https://github.com/donnemartin/system-design-primer"
+    source: "GitHub"
+    favicon: "https://github.com/favicon.ico"
+  
+  - title: "Clean Code"
+    description: "A handbook of agile software craftsmanship"
+    url: "https://www.oreilly.com/library/view/clean-code-a/9780136083238/"
+    source: "O'Reilly"
+    favicon: "https://www.oreilly.com/favicon.ico"
+  
+  - title: "Microservices Patterns"
+    description: "With examples in Java"
+    url: "https://microservices.io/patterns/"
+    source: "Microservices.io"
+    favicon: "https://microservices.io/favicon.ico"
+
+product:
+  - title: "First Round Review - Product Management"
+    description: "Tactical advice for product managers from successful startups"
+    url: "https://review.firstround.com/topics/product-management"
+    source: "First Round"
+    favicon: "https://review.firstround.com/favicon.ico"
+  
+  - title: "Jobs to be Done Framework"
+    description: "Clayton Christensen's framework for understanding customer needs"
+    url: "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done"
+    source: "Harvard Business Review"
+    favicon: "https://hbr.org/favicon.ico"
+  
+  - title: "Inspired: How to Create Tech Products Customers Love"
+    description: "Marty Cagan's guide to product management"
+    url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/"
+    source: "SVPG"
+    favicon: "https://www.svpg.com/favicon.ico"
+  
+  - title: "The Lean Startup"
+    description: "How today's entrepreneurs use continuous innovation"
+    url: "http://theleanstartup.com/"
+    source: "Lean Startup"
+    favicon: "http://theleanstartup.com/favicon.ico"
+  
+  - title: "Product-Led Growth"
+    description: "How to build a product that sells itself"
+    url: "https://productled.com/"
+    source: "ProductLed"
+    favicon: "https://productled.com/favicon.ico"
+  
+  - title: "Hooked: How to Build Habit-Forming Products"
+    description: "Nir Eyal's framework for creating engaging products"
+    url: "https://www.nirandfar.com/hooked/"
+    source: "Nir and Far"
+    favicon: "https://www.nirandfar.com/favicon.ico"
+
+general:
+  - title: "Paul Graham Essays"
+    description: "Timeless essays on startups, technology, and life"
+    url: "http://paulgraham.com/articles.html"
+    source: "Paul Graham"
+    favicon: "http://paulgraham.com/favicon.ico"
+  
+  - title: "Wait But Why"
+    description: "Tim Urban's deep dives into complex topics with stick figures"
+    url: "https://waitbutwhy.com/"
+    source: "Wait But Why"
+    favicon: "https://waitbutwhy.com/favicon.ico"
+
+ai:
+  - title: "Attention Is All You Need"
+    description: "The seminal paper that introduced the Transformer architecture"
+    url: "https://arxiv.org/abs/1706.03762"
+    source: "arXiv"
+    favicon: "https://arxiv.org/favicon.ico"
+  
+  - title: "Anthropic's Constitutional AI"
+    description: "Training AI systems to be helpful, harmless, and honest"
+    url: "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback"
+    source: "Anthropic"
+    favicon: "https://www.anthropic.com/favicon.ico"

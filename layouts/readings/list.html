@@ -1,0 +1,493 @@
+{{ define "main" }}
+<div class="readings-container">
+    <header class="readings-header">
+        <h1>{{ .Title }}</h1>
+        <p class="readings-description">{{ .Description }}</p>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="tech">Tech</button>
+        <button class="category-btn" data-category="product">Product</button>
+        <button class="category-btn" data-category="general">General</button>
+        <button class="category-btn" data-category="ai">AI</button>
+    </nav>
+
+    <!-- Readings Content -->
+    <div class="readings-content">
+        {{ $readings := .Site.Data.readings }}
+        
+        <!-- Tech Section -->
+        <section class="category-section" data-category="tech">
+            <div class="readings-grid" id="tech-grid">
+                {{ range $readings.tech }}
+                <article class="reading-card">
+                    <div class="reading-header">
+                        <img src="{{ .favicon }}" alt="{{ .source }} favicon" class="source-favicon" onerror="this.style.display='none'">
+                        <span class="source-name">{{ .source }}</span>
+                    </div>
+                    <h3 class="reading-title">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                    </h3>
+                    {{ if .description }}
+                    <p class="reading-description">{{ .description }}</p>
+                    {{ end }}
+                    <div class="reading-footer">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="read-link">
+                            Read →
+                        </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section class="category-section" data-category="product">
+            <div class="readings-grid" id="product-grid">
+                {{ range $readings.product }}
+                <article class="reading-card">
+                    <div class="reading-header">
+                        <img src="{{ .favicon }}" alt="{{ .source }} favicon" class="source-favicon" onerror="this.style.display='none'">
+                        <span class="source-name">{{ .source }}</span>
+                    </div>
+                    <h3 class="reading-title">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                    </h3>
+                    {{ if .description }}
+                    <p class="reading-description">{{ .description }}</p>
+                    {{ end }}
+                    <div class="reading-footer">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="read-link">
+                            Read →
+                        </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </section>
+
+        <!-- General Section -->
+        <section class="category-section" data-category="general">
+            <div class="readings-grid" id="general-grid">
+                {{ range $readings.general }}
+                <article class="reading-card">
+                    <div class="reading-header">
+                        <img src="{{ .favicon }}" alt="{{ .source }} favicon" class="source-favicon" onerror="this.style.display='none'">
+                        <span class="source-name">{{ .source }}</span>
+                    </div>
+                    <h3 class="reading-title">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                    </h3>
+                    {{ if .description }}
+                    <p class="reading-description">{{ .description }}</p>
+                    {{ end }}
+                    <div class="reading-footer">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="read-link">
+                            Read →
+                        </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </section>
+
+        <!-- AI Section -->
+        <section class="category-section" data-category="ai">
+            <div class="readings-grid" id="ai-grid">
+                {{ range $readings.ai }}
+                <article class="reading-card">
+                    <div class="reading-header">
+                        <img src="{{ .favicon }}" alt="{{ .source }} favicon" class="source-favicon" onerror="this.style.display='none'">
+                        <span class="source-name">{{ .source }}</span>
+                    </div>
+                    <h3 class="reading-title">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                    </h3>
+                    {{ if .description }}
+                    <p class="reading-description">{{ .description }}</p>
+                    {{ end }}
+                    <div class="reading-footer">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="read-link">
+                            Read →
+                        </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </section>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-container">
+        <nav class="pagination" id="pagination">
+            <!-- Pagination buttons will be generated by JavaScript -->
+        </nav>
+    </div>
+</div>
+
+<style>
+.readings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.readings-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.readings-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.readings-description {
+    font-size: 0.95rem;
+    color: #666;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.category-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    background: white;
+    color: #666;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    border-color: #007acc;
+    background: #007acc;
+    color: white;
+}
+
+.category-section {
+    margin-bottom: 2rem;
+}
+
+.category-section.hidden {
+    display: none;
+}
+
+.readings-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.reading-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.reading-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: #007acc;
+}
+
+.reading-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.source-favicon {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.source-name {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.reading-title {
+    margin: 0 0 0.75rem 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.reading-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reading-title a:hover {
+    color: #007acc;
+}
+
+.reading-description {
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.reading-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.read-link {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: color 0.2s ease;
+}
+
+.read-link:hover {
+    color: #005a99;
+}
+
+.pagination-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    background: white;
+    color: #666;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.pagination button:hover {
+    border-color: #007acc;
+    color: #007acc;
+}
+
+.pagination button.active {
+    background: #007acc;
+    border-color: #007acc;
+    color: white;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button:disabled:hover {
+    border-color: #ddd;
+    color: #666;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .readings-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .readings-container {
+        padding: 0.75rem;
+    }
+    
+    .readings-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .readings-description {
+        font-size: 0.9rem;
+    }
+    
+    .category-nav {
+        gap: 0.5rem;
+    }
+    
+    .category-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .readings-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .reading-card {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .readings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reading-card {
+        padding: 1rem;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const categorySections = document.querySelectorAll('.category-section');
+    const paginationContainer = document.getElementById('pagination');
+    
+    let currentCategory = 'all';
+    let currentPage = 1;
+    const itemsPerPage = 12; // 3x4 grid on desktop
+    
+    function getAllCards() {
+        if (currentCategory === 'all') {
+            return document.querySelectorAll('.reading-card');
+        } else {
+            const section = document.querySelector(`[data-category="${currentCategory}"]`);
+            return section ? section.querySelectorAll('.reading-card') : [];
+        }
+    }
+    
+    function showPage(page) {
+        const allCards = getAllCards();
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        
+        // Hide all cards first
+        allCards.forEach(card => card.style.display = 'none');
+        
+        // Show cards for current page
+        for (let i = startIndex; i < endIndex && i < allCards.length; i++) {
+            allCards[i].style.display = 'block';
+        }
+        
+        updatePagination(allCards.length, page);
+    }
+    
+    function updatePagination(totalItems, currentPage) {
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        
+        if (totalPages <= 1) {
+            paginationContainer.style.display = 'none';
+            return;
+        }
+        
+        paginationContainer.style.display = 'flex';
+        paginationContainer.innerHTML = '';
+        
+        // Previous button
+        const prevBtn = document.createElement('button');
+        prevBtn.textContent = '←';
+        prevBtn.disabled = currentPage === 1;
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+                window.currentPage = currentPage - 1;
+            }
+        });
+        paginationContainer.appendChild(prevBtn);
+        
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement('button');
+            pageBtn.textContent = i;
+            pageBtn.classList.toggle('active', i === currentPage);
+            pageBtn.addEventListener('click', () => {
+                showPage(i);
+                window.currentPage = i;
+            });
+            paginationContainer.appendChild(pageBtn);
+        }
+        
+        // Next button
+        const nextBtn = document.createElement('button');
+        nextBtn.textContent = '→';
+        nextBtn.disabled = currentPage === totalPages;
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+                window.currentPage = currentPage + 1;
+            }
+        });
+        paginationContainer.appendChild(nextBtn);
+    }
+    
+    function switchCategory(targetCategory) {
+        currentCategory = targetCategory;
+        currentPage = 1;
+        window.currentPage = 1;
+        
+        // Show/hide sections
+        categorySections.forEach(section => {
+            if (targetCategory === 'all' || section.dataset.category === targetCategory) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        });
+        
+        showPage(1);
+    }
+    
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetCategory = this.dataset.category;
+            
+            // Update active button
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            switchCategory(targetCategory);
+        });
+    });
+    
+    // Initialize
+    window.currentPage = currentPage;
+    showPage(1);
+});
+</script>
+{{ end }}

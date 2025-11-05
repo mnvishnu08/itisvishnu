@@ -1,0 +1,140 @@
+{{ define "main" }}
+<div style="padding-left: clamp(1rem, 5vw, 100px); padding-right: clamp(1rem, 5vw, 100px); max-width: 800px; margin-left: auto; margin-right: auto;">
+
+<!-- Back Navigation -->
+<div style="margin-bottom: var(--spacing-lg);">
+  <a href="/itisvishnu/thoughts/" style="display: inline-flex; align-items: center; color: var(--text-color-light); text-decoration: none; font-size: var(--font-size-sm); transition: all var(--transition-fast);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-color-light)'">
+    <span style="margin-right: var(--spacing-xs);">←</span>
+    Back to Thoughts
+  </a>
+</div>
+
+<!-- Article Header -->
+<header style="margin-bottom: var(--spacing-xl); text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: var(--spacing-lg);">
+  <h1 style="font-size: var(--font-size-2xl); font-weight: 800; color: var(--heading-color); margin-bottom: var(--spacing-sm); line-height: 1.2;">{{ .Title }}</h1>
+  
+  {{ if .Description }}
+  <p style="font-size: var(--font-size-md); color: var(--text-color-light); margin-bottom: var(--spacing-md); font-style: italic;">{{ .Description }}</p>
+  {{ end }}
+  
+  <div style="display: flex; justify-content: center; align-items: center; gap: var(--spacing-md); font-size: var(--font-size-sm); color: var(--text-color-light);">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    <span>•</span>
+    <span>{{ math.Round (div (countwords .Content) 200.0) }} min read</span>
+  </div>
+</header>
+
+<!-- Article Content -->
+<article class="post-content" style="font-size: var(--font-size-md); line-height: 1.7; color: var(--text-color);">
+  {{ .Content }}
+</article>
+
+<!-- Article Footer -->
+<footer style="margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); border-top: 1px solid var(--border-color);">
+  
+  <!-- Tags -->
+  {{ if .Params.tags }}
+  <div style="margin-bottom: var(--spacing-lg);">
+    <h4 style="font-size: var(--font-size-sm); color: var(--text-color-light); margin-bottom: var(--spacing-sm); text-transform: uppercase; letter-spacing: 0.05em;">Tags</h4>
+    <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-xs);">
+      {{ range .Params.tags }}
+      <span style="background-color: var(--surface-color-alt); color: var(--text-color); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-full); font-size: var(--font-size-xs);">#{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Navigation to Other Articles -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+    {{ with .PrevInSection }}
+    <a href="{{ .Permalink }}" style="display: block; padding: var(--spacing-md); background-color: var(--surface-color-alt); border-radius: var(--radius-md); text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--accent-color)'; this.style.color='white'" onmouseout="this.style.backgroundColor='var(--surface-color-alt)'; this.style.color='var(--text-color)'">
+      <div style="font-size: var(--font-size-xs); color: var(--text-color-light); margin-bottom: var(--spacing-xs);">← Previous</div>
+      <div style="font-weight: 600; font-size: var(--font-size-sm);">{{ .Title }}</div>
+    </a>
+    {{ else }}
+    <div></div>
+    {{ end }}
+    
+    {{ with .NextInSection }}
+    <a href="{{ .Permalink }}" style="display: block; padding: var(--spacing-md); background-color: var(--surface-color-alt); border-radius: var(--radius-md); text-decoration: none; text-align: right; transition: all var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--accent-color)'; this.style.color='white'" onmouseout="this.style.backgroundColor='var(--surface-color-alt)'; this.style.color='var(--text-color)'">
+      <div style="font-size: var(--font-size-xs); color: var(--text-color-light); margin-bottom: var(--spacing-xs);">Next →</div>
+      <div style="font-weight: 600; font-size: var(--font-size-sm);">{{ .Title }}</div>
+    </a>
+    {{ end }}
+  </div>
+
+  <!-- Back to Thoughts -->
+  <div style="text-align: center;">
+    <a href="/itisvishnu/thoughts/" class="button" style="display: inline-block;">
+      View All Thoughts
+    </a>
+  </div>
+  
+</footer>
+
+</div>
+
+<style>
+/* Article-specific styles */
+.post-content h2 {
+  font-size: var(--font-size-xl);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--heading-color);
+}
+
+.post-content h3 {
+  font-size: var(--font-size-lg);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--heading-color);
+}
+
+.post-content p {
+  margin-bottom: var(--spacing-md);
+}
+
+.post-content ul, .post-content ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+}
+
+.post-content li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.post-content blockquote {
+  border-left: 4px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  font-style: italic;
+  color: var(--text-color-light);
+}
+
+.post-content strong {
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.post-content em {
+  font-style: italic;
+  color: var(--text-color-light);
+}
+
+@media (max-width: 768px) {
+  .post-content {
+    font-size: var(--font-size-base);
+  }
+  
+  footer > div:nth-child(2) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  footer a[style*="text-align: right"] {
+    text-align: left !important;
+  }
+}
+</style>
+
+{{ end }}

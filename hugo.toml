@@ -18,15 +18,41 @@ enableRobotsTXT = true
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
+
+# Allow raw HTML in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 [permalinks]
   blog = "/:slug/"
   tags = "/blog/:slug"
 
 # Menu configuration
 [[menu.main]]
+  name = "home base"
+  url = "/"
+  weight = 5
+
+[[menu.main]]
   name = "thoughts"
   url = "/thoughts/"
   weight = 10
+
+[[menu.main]]
+  name = "readings"
+  url = "/readings/"
+  weight = 20
+
+[[menu.main]]
+  name = "vishnu's lab"
+  url = "/vishnus_lab/"
+  weight = 30
+
+[[menu.main]]
+  name = "whoami"
+  url = "/about_me/"
+  weight = 40
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.

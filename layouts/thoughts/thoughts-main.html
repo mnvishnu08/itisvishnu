@@ -4,22 +4,22 @@
 <h2>General Observations</h2>
 <ul class="blog-posts">
   {{ range where .Site.RegularPages "Section" "thoughts" }}
-    {{ if in .File.Dir "observations" }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
+  {{ if in .File.Dir "observations" }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
   {{ end }}
 </ul>
 
 <h2>Business Teardowns</h2>
 <ul class="blog-posts">
   {{ range where .Site.RegularPages "Section" "thoughts" }}
-    {{ if in .File.Dir "teardowns" }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
+  {{ if in .File.Dir "teardowns" }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
   {{ end }}
 </ul>
 {{ end }}

@@ -1,19 +1,16 @@
 <div class="nav-links">
-    <a href="/itisvishnu/" class="nav-link">Home Base</a>
+    <a href="/itisvishnu/" class="nav-link{{ if and (eq .Section "") (not (in .RelPermalink "about_me")) (not (in .RelPermalink "contact_me")) }} nav-link-active{{ end }}">Home Base</a>
 
-    {{ with .Site.GetPage "/About_Me" }}
-    <a href="/itisvishnu/about_me/" class="nav-link">Whoami</a>
-    {{ end }}
+    <a href="/itisvishnu/about_me/" class="nav-link{{ if or (eq .Section "about_me") (in .RelPermalink "about_me") }} nav-link-active{{ end }}">Whoami</a>
 
-    <a href="/itisvishnu/thoughts/" class="nav-link">thoughts</a>
+    <a href="/itisvishnu/thoughts/" class="nav-link{{ if eq .Section "thoughts" }} nav-link-active{{ end }}">thoughts</a>
 
-    {{ with .Site.GetPage "/Vishnus_Lab" }}
-    <a href="/itisvishnu/vishnus_lab/" class="nav-link">Lab</a>
-    {{ end }}
+    <a href="/itisvishnu/readings/" class="nav-link{{ if eq .Section "readings" }} nav-link-active{{ end }}">readings</a>
 
-    {{ with .Site.GetPage "/Contact_Me" }}
-    <a href="/itisvishnu/contact_me/" class="nav-link">Reach out</a>
-    {{ end }}
+    <a href="/itisvishnu/vishnus_lab/" class="nav-link{{ if eq .Section "vishnus_lab" }} nav-link-active{{ end }}">Lab</a>
+
+    <a href="/itisvishnu/contact_me/" class="nav-link{{ if or (eq .Section "contact_me") (in .RelPermalink "contact_me") }} nav-link-active{{ end }}">Reach out</a>
+    
     <button id="theme-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
         <span id="theme-toggle-icon">🌙</span>
     </button>
