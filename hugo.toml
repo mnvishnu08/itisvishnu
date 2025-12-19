@@ -18,6 +18,13 @@ enableRobotsTXT = true
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
+
+# Allow raw HTML in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [permalinks]
   blog = "/:slug/"
   tags = "/blog/:slug"
